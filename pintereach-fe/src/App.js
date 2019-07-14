@@ -1,19 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {Route } from 'react-router-dom';
 
 import Nav from './components/Nav';
-import SignIn from './components/SignIn';
+import SignIn from "./components/SignIn";
+import Register from './components/Register';
+import Boards from './components/Boards';
+import About from './components/About';
 import './css/App.css';
 
 class App extends React.Component {
   render(){
     return (
-      <Router>
-        <Route path="/" component={Nav} />
-        <h1>Pintereach</h1>
-        <p></p>
-        <Route path="" component={SignIn}/>
-      </Router>
+      <div>
+        <Route path ="/" exact component={Nav} />
+        <Route path ='/signin' component={SignIn} />
+        <Route path ='/register' component={Register} />
+        <Route path ='/boards' component={Boards} />
+        <Route path ='/about' component={About} />
+      </div>
     )
   }
 }

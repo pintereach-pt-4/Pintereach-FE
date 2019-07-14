@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NavLink} from 'react-router-dom';
 import '../css/bootstrap.min.css';
 
 
@@ -14,12 +14,25 @@ const Nav = () => {
                 <div className="navbar-collapse collapse show" id="navbarColor02">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active"> 
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            <NavLink to="/" activeClassName="activeNavButton" className="nav-link">
+                            Home <span className="sr-only">(current)</span>
+                            </NavLink>
+                           
                         </li>
-                        <li className="nav-item"></li>
-                         <a className="nav-link" href="#">Sign-up/Sign-in</a>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Boards</a>
+                         <NavLink to="/signin" activeClassName="activeNavButton" className="nav-link">
+                            Sign In
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                         <NavLink to="/register" activeClassName="activeNavButton" className="nav-link">
+                            Sign Up
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                         <NavLink to="/boards" activeClassName="activeNavButton" className="nav-link">
+                            My Boards
+                            </NavLink>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">About</a>
