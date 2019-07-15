@@ -6,7 +6,7 @@ h1 {
 #middle {
     background-image: url("https://images.unsplash.com/photo-1532153955177-f59af40d6472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
     height: 200px;
-    margin: 6% auto;
+    margin: 2% auto;
 }
 
 .home-p {
@@ -14,10 +14,13 @@ h1 {
 }
 
 ol {
-    margin-left: 30%
+    margin-left: 30%;
+    margin-top: 2%;
 }
+
 .home-btn{
     margin-left: 30%;
+    margin-bottom: 8%;
 }
 
 

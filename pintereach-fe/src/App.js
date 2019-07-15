@@ -7,6 +7,7 @@ import Register from './components/Register';
 import Boards from './components/Boards';
 import About from './components/About';
 import Home from './components/Home';
+import Footer from './components/Footer';
 import './css/App.css';
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
         <Route path ='/register' component={Register} />
         <Route path ='/boards' component={Boards} />
         <Route path ='/about' component={About} />
+        <Route path="/" component={Footer} />
       </div>
     )
   }

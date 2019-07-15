@@ -10,7 +10,12 @@ h1 {
 
 .btn-sign {
     margin-left: 35%;
+    margin-bottom: 10%;
 }
 #signinHeader {
     margin-right: 15%;
+}
+
+footer {
+    margin-top: 20px;
 }
