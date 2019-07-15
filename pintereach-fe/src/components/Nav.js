@@ -8,14 +8,14 @@ const Nav = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a className="navbar-brand" href="#">Pintereach</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="true" aria-label="Toggle navigation">
+                <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="navbar-collapse collapse show" id="navbarColor02">
-                    <ul className="navbar-nav mr-auto">
+                <div className="collapse navbar-collapse" id="navbarColor02">
+                    <ul className="nav navbar-nav mr-auto">
                         <li className="nav-item active"> 
-                            <NavLink to="/" activeClassName="activeNavButton" className="nav-link">
-                            Home <span className="sr-only">(current)</span>
+                            <NavLink to="/home" activeClassName="activeNavButton" className="nav-link">
+                            Home
                             </NavLink>
                            
                         </li>
@@ -30,12 +30,14 @@ const Nav = () => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                         <NavLink to="/boards" activeClassName="activeNavButton" className="nav-link">
-                            My Boards
+                            <NavLink to="/boards" activeClassName="activeNavButton" className="nav-link">
+                                 My Boards
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">About</a>
+                            <NavLink to="/about" activeClassName="activeNavButton" className="nav-link">
+                                About
+                            </NavLink>
                         </li>
                     </ul>
 

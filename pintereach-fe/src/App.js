@@ -6,13 +6,15 @@ import SignIn from "./components/SignIn";
 import Register from './components/Register';
 import Boards from './components/Boards';
 import About from './components/About';
+import Home from './components/Home';
 import './css/App.css';
 
 class App extends React.Component {
   render(){
     return (
       <div>
-        <Route path ="/" exact component={Nav} />
+        <Route path ="/" component={Nav} />
+        <Route path="/home" component={Home} />
         <Route path ='/signin' component={SignIn} />
         <Route path ='/register' component={Register} />
         <Route path ='/boards' component={Boards} />
