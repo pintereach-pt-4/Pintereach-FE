@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 2% 3% 6% 0;
+}
+
+.btn-sign {
+    margin-left: 35%;
+    margin-bottom: 10%;
+}
+#signinHeader {
+    margin-right: 15%;
+}
+
+footer {
+    margin-top: 20px;
+}

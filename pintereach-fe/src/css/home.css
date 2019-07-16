@@ -1,0 +1,33 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#middle {
+    background-image: url("https://images.unsplash.com/photo-1532153955177-f59af40d6472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+    height: 200px;
+    margin: 2% auto;
+}
+
+.home-p {
+    margin-left: 25%;
+}
+
+ol {
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+.home-btn{
+    margin-left: 30%;
+    margin-bottom: 8%;
+}
+
+
+.btn-home {
+    margin: 6%;
+}
+
+a{
+    color: white;
+}
