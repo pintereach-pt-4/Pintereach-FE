@@ -7,14 +7,14 @@ const Nav = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a className="navbar-brand" href="#">Pintereach</a>
+                <a className="navbar-brand" href="/home">Pintereach</a>
                 <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarColor02">
                     <ul className="nav navbar-nav mr-auto">
                         <li className="nav-item active"> 
-                            <NavLink to="/home" activeClassName="activeNavButton" className="nav-link">
+                            <NavLink to="/" activeClassName="activeNavButton" className="nav-link">
                             Home
                             </NavLink>
                            

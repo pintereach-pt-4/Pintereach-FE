@@ -1,5 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
+import { login } from '../actions';
 import '../css/bootstrap.min.css';
 import '../css/form.css';
 
@@ -12,11 +14,6 @@ class SignIn extends React.Component {
         }
     }
 
-    login = e => {
-        e.preventDefault();
-        this.props.login(this.state.credentials);
-    }
-
     handleChange = e => {
         this.setState({
             credentials: {
@@ -26,13 +23,19 @@ class SignIn extends React.Component {
         });
     }
 
+    _handleSubmit=e=>{
+      e.preventDefault()
+      this.props.login(this.state.credentials)
+      this.props.history.push("/")
+    }
+
     render(){
         return (
           <div className="container">
             <h1 id="signinHeader">Login Form</h1>
-            <form onSubmit={this.login}>
+            <form onSubmit={this._handleSubmit}>
               <div className="form-group row">
-                <label for="username" className="col-sm-2 col-form-label">
+                <label htmlFor="username" className="col-sm-2 col-form-label">
                   Username:
                 </label>
                 <div className="col-sm-6">
@@ -46,7 +49,7 @@ class SignIn extends React.Component {
                 </div>
               </div>
               <div className="form-group row">
-                <label for="password" className="col-sm-2 col-form-label">Password:  </label>
+                <label htmlFor="password" className="col-sm-2 col-form-label">Password:  </label>
                 <div className="col-sm-6">
                   <input
                     type="password"
@@ -66,4 +69,4 @@ class SignIn extends React.Component {
     }
 }
 
-export default SignIn;
+export default connect(null, { login })(SignIn);

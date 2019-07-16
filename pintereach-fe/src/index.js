@@ -5,17 +5,17 @@ import { createStore, applyMiddleware} from "redux"
 import { Provider } from "react-redux"
 import thunk from "redux-thunk"
 import rootReducer from "./reducers"
-import {BrowserRouter as Router } from "react-router-dom";
+// import {BrowserRouter as Router } from "react-router-dom";
 import App from './App';
 
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
-const Home = () => <Router><App/></Router>;
+
 
 ReactDOM.render(
     <Provider store={store}>
-       <Home />
+       <App />
     </Provider>,
     document.getElementById('root')
 );
